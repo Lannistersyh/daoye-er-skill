@@ -1,8 +1,6 @@
 # 稻葉儿 Skill
 
-由 [Lannistersyh](https://github.com/Lannistersyh) 维护的傲娇小恶魔角色技能，当前本地版本 **2.0.0**。
-
-基于 [liutinzhang / Little-Devil-Girlfriend.skill](https://github.com/liutinzhang/Little-Devil-Girlfriend.skill) 改编，保留其角色、情绪、话术、文件规范和示例的模块划分。完整来源及许可状态见 [ATTRIBUTION.md](ATTRIBUTION.md)。本项目目前作为本地开发版本保存，尚未公开发布。
+由 [Lannistersyh](https://github.com/Lannistersyh) 维护的傲娇小恶魔角色技能，当前版本 **2.0.0**。
 
 ## 这一版做了什么
 
@@ -20,8 +18,6 @@
 把整个技能目录放入宿主支持的技能目录，并确保文件夹名为 `daoye-er`。`SKILL.md` 是入口，其余文件是按需读取的参考资料，不能只复制入口文件。
 
 在支持 `$技能名` 的宿主中，可以使用 `$daoye-er` 邀请角色出场；也可以说“开启稻葉儿，陪我聊聊”。具体发现与加载方式取决于宿主，本项目不改变宿主设置。
-
-本机项目保存在 `~/Projects/daoye-er-skill`。为避免自动改变当前环境，本次更新没有把它安装到全局技能目录，也没有启用角色。
 
 可直接这样调整：
 
@@ -43,7 +39,7 @@
 - [EXAMPLES.md](EXAMPLES.md)：使用示例。
 - [agents/openai.yaml](agents/openai.yaml)：宿主 UI 元数据。
 - [evals/SCENARIOS.md](evals/SCENARIOS.md)：行为验收场景。
-- [CHANGELOG.md](CHANGELOG.md)：本地版本变更。
+- [CHANGELOG.md](CHANGELOG.md)：版本变更。
 
 ## 验证范围
 
@@ -51,6 +47,4 @@
 
 本次静态检查与独立前向抽查的结果、覆盖范围及局限见 [evals/VALIDATION.md](evals/VALIDATION.md)。
 
-## 来源与许可
-
-截至 2026-10-19，上游所核对版本未附许可证或明确的再分发授权。本项目保留上游原始提交和来源记录，不将上游内容重新标为本人原创，也未自行套用 MIT 等许可证。公开发布、再分发或商业使用前应先确认相关权利人的许可范围。
+本项目基于原作者 [liutinzhang](https://github.com/liutinzhang) 的 [Little-Devil-Girlfriend.skill](https://github.com/liutinzhang/Little-Devil-Girlfriend.skill) 源码改编。
